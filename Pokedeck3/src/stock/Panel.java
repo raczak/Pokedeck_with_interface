@@ -12,16 +12,15 @@ import java.io.IOException;
  
 
 
+
 import javax.imageio.ImageIO;
+import javax.swing.JLabel;
 import javax.swing.JPanel;
  
 public class Panel extends JPanel 
 { 
   public void paintComponent(Graphics g)
   {	  
-    //Vous verrez cette phrase chaque fois que la méthode sera invoquée
-    System.out.println("Je suis exécutée !"); 
-    //g.drawString("Tiens ! Le Site du Zéro !", 10, 20);
     try 
     {
         Image img = ImageIO.read(new File("pokedex.jpg"));
